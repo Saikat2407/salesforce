@@ -25,3 +25,78 @@ public class prime {
     	}
   }
 }
+
+// factors
+
+public class factor {
+	public static void factors(integer num)
+    {
+        System.debug('Factors are:');
+        for(integer i= 1 ;i<=num;i++)
+        {
+            if(Math.mod(num, i) == 0)
+            {
+                System.debug(i);
+            }
+        }
+    }
+}
+
+//power of num
+
+public class powernum {
+    public static void power(integer num, integer pow)
+    {
+        System.debug('Value is '+ (Math.pow(num, pow)));
+    }
+}
+
+//fibonacci 
+
+public class fibbonaci {
+    public static void fibbo(integer num)
+    {
+        integer a,b,c;
+        a=0;
+        b=1;
+        c=a+b;
+        List<integer> series = new List<integer>{0,1};
+        for(integer i=3;i<=num;i++)
+        {
+            series.add(c);
+            a=b;
+            b=c;
+            c=a+b;
+        }
+        System.debug('Fibonnaci Siries = '+ series );
+            
+    }
+}
+				  
+//max in array
+				   
+public class maxinarray {
+    public static void showMax(){
+    List<integer> arrayM = new List<integer>();
+    for(integer i =0;i<=5;i++)
+        {
+            arrayM.add(i);
+        }
+        integer max = arrayM[0];
+        
+        for(integer i =0; i< arrayM.size() ; i++)
+        {
+            
+                if(arrayM[i]>max)
+                {
+                    max = arrayM[i];
+                }
+        }
+        
+        System.debug('Max Element in array is: ' + max);
+
+    }
+}
+
+//array in reverse order (without reverse() (using class).
+
