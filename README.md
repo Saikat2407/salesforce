@@ -99,4 +99,42 @@ public class maxinarray {
 }
 
 //array in reverse order (without reverse() (using class).
+	
+public class reversethearray {
+    public static void reverseArray(){
+    List<integer> arrayM = new List<integer>();
+    for(integer i =0;i<=5;i++)
+        {
+            arrayM.add(i);
+        }
+        integer startI,endI;
+        startI=0;
+        endI=arrayM.size()-1;
+        
+        
+        while(startI < endI)
+        {
+            integer temp = arrayM[startI];
+          arrayM[startI] = arrayM[endI];
+          arrayM[endI] = temp;
+          startI++;
+          endI--;
+        }
+    System.debug(arrayM);
+
+    }
+}
+
+	
+//fahreneit to celcius 
+	
+public class temprat {
+    public static Decimal fahrenheitTocelcius(Decimal fh){
+        Decimal cs = (fh - 32) * 5/9;
+        system.debug('@@' + cs);
+        return cs.setScale(2);
+    }
+}
+	
+
 
